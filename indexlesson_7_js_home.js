@@ -42,7 +42,7 @@
 //В этом массиве у Вас мандарин должен будет замениться на ананас. 
 
     
-var fruits = ['baban', 'orange', 'mango'];
+var fruits = ['baban', 'orange', 'mango'];//Один var
     fruits.splice(fruits.length - 2, 1, 'pineaple');
     console.log(fruits);
     
@@ -110,10 +110,8 @@ console.log( camelize('background-color') );
     var students = ["Илья","Greg", "Алина"];
     var i,
         j;
-    for(i = 0; i < students.length; i++)
-    {
-        for(j = 0; j < students[i].length; j++)
-        {
+    for (i = 0; i < students.length; i++) {
+        for(j = 0; j < students[i].length; j++) {
             if(students[i].charCodeAt(j) > 1103 || students[i].charCodeAt(j) < 1040)
             {
                 console.log('буква вне диапазона русских  ' + students[i].charAt(j) + ' в слове ' + students[i] + '<br>' );
